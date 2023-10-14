@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,body{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+ 
+.button{
+    width: 3.8rem;
+    height: 3.8rem;
+    margin: 0 3px;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 900;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(227, 247, 240);
+    font-family: 'Roboto',sans-serif;
+    border: 1px solid rgb(15, 15, 15);
+}
+
+.button:hover{
+    background-color: rgb(189, 207, 201);
+}
+.bg-blue:hover{
+    background-color: rgb(59, 59, 213);
+}
+
+.container{
+    /* width: 320px; */
+    /* height: 440px; */
+    width: 20rem;
+    height: 26rem;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px 0 #d6dfe2;
+    background-color: rgb(222, 93, 46);
+    border: 2px solid rgb(205, 103, 8);
+}
+
+.row input{
+    width: 16rem;
+    height: 2.5rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.intro{
+    /* width: 330px; */
+    /* height: 50px; */
+    width: 20.5rem;
+    height:2.5rem;
+    margin-top:2px;
+    color: white;
+    font-size: 1.80em;
+    border-radius: 8px;
+    background-color: rgb(222, 93, 46);
+    box-shadow: 0px 2px 3px 0 #d6dfe2;
+}
+
+.pressed {
+    opacity: 0.4;
+}
+
+.main{
+    width: 25rem;
+    height: 35rem;
+    display: flex;
+    gap: 1px;
+    margin:2px;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(236, 151, 53);
+}
+
+@media (max-width:500px){
+
+    .main{
+        width: 10rem;
+        height: 29.7rem;
+        margin:2px;
+    }
+
+    .intro{
+        width: 17.5rem;
+        height:2.3rem;
+        font-size: 1.5rem;
+    }
+
+    .row input{
+        width: 15rem;
+        height: 2.2rem;
+        font-size: 1.5em;
+        font-weight: 500;
+        border-radius: 4px;
+        border: 2px solid black;
+    }
+    .container{
+        width: 16.5rem;
+        height: 23.9rem;
+        padding: 5px;
+    }
+
+    .button{
+        width: 3.4rem;
+        height: 3.4rem;
+        margin: 0 3px;
+        padding: 5px;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+}
+
+@media (max-width:1000px){
+    .main{
+        width: 20rem;
+        height: 29rem;
+        padding: 5px;
+    }
+    .container{
+        width: 17rem;
+        height: 23rem;
+    }
+    .button{
+        width: 3.4rem;
+        height: 3.4rem;
+        padding: 5px;
+    }
+    .intro{
+        width: 18rem;
+        font-size: 1.5rem;
+    }
+    
+    .row input{
+        width: 14.7rem;
+    }
+
+}

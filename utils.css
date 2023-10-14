@@ -1,0 +1,23 @@
+.text-center{
+    text-align: center;
+}
+
+.bg-red{
+    background-color: rgb(239, 41, 6);
+}
+.bg-blue{
+    background-color: rgb(7, 7, 249);
+}
+.cl-white{
+    color: white;
+}
+.cl-blue{
+    color: blue;
+}
+.flex{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
