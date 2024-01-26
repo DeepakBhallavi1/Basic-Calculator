@@ -1,63 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html,body{
-    display:flex;
-    justify-content:center;
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    display:flex;
+    justify-content:center;
+    background-color: rgb(196, 193, 190);
 }
  
 .button{
     width: 3.8rem;
     height: 3.8rem;
-    margin: 0 3px;
-    padding: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: 900;
-    align-items: center;
-    border-radius: 30px;
-    background-color: rgb(227, 247, 240);
-    font-family: 'Roboto',sans-serif;
-    border: 1px solid rgb(15, 15, 15);
-}
 
-.button:hover{
-    background-color: rgb(189, 207, 201);
+    padding: 5px;
+    margin: 0 3px;
+
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Roboto',sans-serif;
+    
+    cursor: pointer;
+    align-items: center;
+    
+    border-radius: 10px;
+    border: 1px solid rgb(124, 100, 100);
+
+    color: white;
+    background-color: rgba(58, 50, 50, 0.63);
+    box-shadow: 2px 2px 2px rgba(95, 88, 88, 0.799);
 }
-.bg-blue:hover{
-    background-color: rgb(59, 59, 213);
+.button:hover{
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px rgba(43, 33, 33, 0.281);
+}
+.equal:hover{
+    color: white;
+    background-color: rgba(26, 9, 156, 0.833);
 }
 
 .container{
     width: 20rem;
     height: 26rem;
+
     padding: 5px;
     border-radius: 8px;
-    box-shadow: 0px 2px 3px 0 #d6dfe2;
-    background-color: rgb(222, 93, 46);
-    border: 2px solid rgb(205, 103, 8);
+    border: 1px solid rgb(100, 87, 75);
+
+    background-color: rgba(63, 57, 54, 0.516);
+    box-shadow: 0px 2px 3px 0 #282a2b;
 }
 
-.row input{
-    width: 16rem;
-    height: 2.5rem;
-    font-size: 1.5em;
+.input-box input{
+    width: 14.4rem;
+    border: none;
+    padding: 8px;
+    font-size: 1.2em;
     font-weight: 500;
     border-radius: 4px;
-    border: 2px solid black;
+    color: white;
+    background-color: rgba(194, 185, 182, 0.434);
+    box-shadow: 1px 1px 1px #393a3a9a;
+}
+.optr{
+    font-weight: 900px;
+    color: rgb(57, 159, 58);
+    background-color: rgba(58, 50, 50, 0.7);
+}
+.optr:hover{
+    color: green;
+    background-color: rgba(58, 50, 50, 1);
 }
 
 .intro{
     width: 20.5rem;
     height:2.5rem;
     margin-top:2px;
-    color: white;
+    padding: 5px;
+    padding-top: 8px;
     font-size: 1.80em;
     border-radius: 8px;
-    background-color: rgb(222, 93, 46);
-    box-shadow: 0px 2px 3px 0 #d6dfe2;
+    color: white;
+    background-color: rgba(63, 57, 54, 0.516);
+    box-shadow: 0px 2px 3px 0 #282a2b;
 }
 
 .pressed {
@@ -74,7 +99,9 @@ html,body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(236, 151, 53);
+    background-color: rgba(101, 100, 97, 0.719);
+    box-shadow: 1px 2px 3px 0 #282a2b;
+
 }
 
 @media (max-width:500px){
@@ -86,23 +113,15 @@ html,body{
     }
 
     .intro{
-        width: 17.5rem;
+        width: 20.5rem;
         height:2.3rem;
-        font-size: 1.5rem;
-    }
-
-    .row input{
-        width: 15rem;
-        height: 2.2rem;
-        font-size: 1.4em;
-        font-weight: 500;
-        border-radius: 4px;
-        border: 2px solid black;
+        font-size: 10px;
     }
     .container{
         width: 16.5rem;
         height: 23.9rem;
         padding: 5px;
+        margin: 2px 0;
     }
 
     .button{
@@ -113,17 +132,17 @@ html,body{
         font-size: 1rem;
         font-weight: 900;
     }
-
-    .button:hover{
-        background-color: rgb(227, 247, 240);
+    
+    .equal:hover{
+        background-color: rgba(26, 9, 156, 0.833);
     }
-
+ 
 }
 
 @media (max-width:1000px){
     .main{
         width: 20rem;
-        height: 29rem;
+        height: 30rem;
         padding: 5px;
     }
     .container{
@@ -139,9 +158,15 @@ html,body{
         width: 18rem;
         font-size: 1.5rem;
     }
-    
-    .row input{
-        width: 14.7rem;
+
+    .input-box input{
+        font-size: 1.18rem;
+    }
+
+}
+@media (min-width:1000px){
+    .input-box input{
+        width: 16rem;
     }
 
 }
