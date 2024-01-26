@@ -3,50 +3,52 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title> Calculator </title>
+    <link rel="shortcut icon" href="calc-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
 </head>
 <body>
-    
+     
     <div class="main">
 
-        <h1 class="text-center intro">Welcome to Calculate</h1>
+        <h1 class="text-center intro">Welcome to Calculator!</h1>
         <div class="container flex">
             
-            <div class="row">
-                <input type="text" placeholder="Enter" readonly>
+            <div class="row input-box">
+                <input type="text" value="" placeholder="0" readonly>
             </div>
             <div class="row">
-                <button class="button cl-blue AC">AC</button>
-                <button class="button cl-blue x">x</button>
-                <button class="button cl-blue mulNeg">+/-</button>
-                <button class="button cl-blue divide">/</button>
+                <button class="button AC optr">AC</button>
+                <button class="button DEL optr">DEL</button>
+                <button class="button mulNeg optr">+/-</button>
+                <button class="button divide optr">/</button>
             </div>
             <div class="row">
                 <button class="button seven">7</button>
                 <button class="button eight">8</button>
                 <button class="button nine">9</button>
-                <button class="button cl-blue X">X</button>
+                <button class="button X optr">X</button>
             </div>
             <div class="row">
                 <button class="button four">4</button>
                 <button class="button five">5</button>
                 <button class="button six">6</button>
-                <button class="button cl-blue minus">--</button>
+                <button class="button minus optr">--</button>
             </div>
             <div class="row">
                 <button class="button one">1</button>
                 <button class="button two">2</button>
                 <button class="button three">3</button>
-                <button class="button cl-blue plus">+</button>
+                <button class="button plus optr">+</button>
             </div>
             <div class="row">
-                <button class="button rem">%</button>
+                <button class="button rem optr">%</button>
                 <button class="button zero">0</button>
                 <button class="button dot">.</button>
-                <button class="button bg-blue cl-white equal">=</button>
+                <button class="button bg-blue equal">=</button>
             </div>
 
         </div>
