@@ -1,4 +1,5 @@
 # Basic-Calculator
+Live - https://deepakbhallavi1.github.io/Basic-Calculator/
 This is a basic calculator web app which is simple and user-friendly tool that allows users to perform basic arithmetic operations, including addition, subtraction, multiplication, and division. It typically features a clean and intuitive interface with a display screen to show the input and result, along with numeric buttons and operational buttons for performing calculations.
 
 # Tech Stack
